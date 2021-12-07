@@ -1,0 +1,165 @@
+.area-total {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0%;
+  padding: 0%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 4.4fr 2.6fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "area-combate area-combate"
+    "area-comandos area-logs";
+}
+
+.area-combate {
+  margin: 0%;
+  padding: 0%;
+  grid-area: area-combate;
+  background-image: url("../../utils/images/areaDoCombate.svg");
+  background-size: cover;
+}
+
+.area-comandos {
+  position: relative;
+  margin-bottom: 0%;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  background: #1D243D;
+  grid-area: area-comandos;
+}
+
+.area-logs {
+  width: 100%;
+  background: #404C76;
+  grid-area: area-logs; }
+
+.area-total-alert {
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 15vh 20vh;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "area-alert area-alert"
+    "area-sim area-nao";
+  margin-left: 5vh;
+  margin-right: 5vh;
+  padding-bottom: 11%;
+}
+
+.area-alert { 
+  font-size: 18px;
+  font-weight: 800;
+  text-decoration-color: black;
+  text-decoration-style: solid;
+  margin: 1% 0% 0% 3%;
+  padding: 0%;
+  text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: area-alert; }
+
+.area-sim { grid-area: area-sim; }
+
+.area-nao { grid-area: area-nao; }
+
+#pontos{
+  font-size: 18px;
+  font-weight: 800;
+  text-decoration-color: black;
+  text-decoration-style: solid;
+  margin: 1% 0% 0% 3%;
+  padding: 0%;
+  text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+#texto{
+  font-size: 12px;
+  position: relative;
+  margin: auto;
+}
+
+.cenario{
+  display: flex;
+  flex-direction: row;
+  margin: 5% 5% 1% 3%;
+  border-collapse: collapse;
+}
+#desistir{
+  margin-left: auto;
+  margin-right: auto;
+}
+.heroi{
+ margin-top: 9%;
+  
+}
+.monstro{
+  margin-top: 9%;
+  margin-left: 30%;
+}
+
+.lista{
+  height: max-content;
+  overflow-y: hidden;
+  color: white;
+  padding-top: 1%;
+}
+
+
+.area-total-comandos {
+  margin: 0%;
+  padding: 0%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 2.4fr 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "area-comandos-titulo area-comandos-titulo area-comandos-titulo"
+    "area-botao-ataque area-botao-ataque-especial area-botao-curar"
+    "area-bota-desistir area-bota-desistir area-bota-desistir";
+}
+
+.area-comandos-titulo { grid-area: area-comandos-titulo; }
+
+.area-botao-ataque { grid-area: area-botao-ataque; }
+
+.area-botao-ataque-especial { grid-area: area-botao-ataque-especial; }
+
+.area-botao-curar { grid-area: area-botao-curar; }
+
+.area-bota-desistir { grid-area: area-bota-desistir; }
+
+#monstro-log{
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#heroi-log{
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+}
+
+#heroi-log-especial{
+  
+  background-color: rgba(184, 168, 19, 0.836);
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+}

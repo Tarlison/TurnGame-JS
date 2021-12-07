@@ -1,0 +1,65 @@
+.mainHome {  
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0%;
+    padding: 0%;
+    background-image: url("../../utils/images/home.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    
+    
+   
+}
+.quadrado{
+    height: 40vh;
+    max-width: 320px;
+    width: 90%;
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-end;
+    align-content: flex-end;
+    /* position: absolute; */
+    bottom: 0;
+}
+
+#login{
+    background-color: #1D243D;
+    width: 100%;
+}
+
+.bem-vindo{
+    height: 23vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+}
+#msg{
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#nome-jogo{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.div-form{
+    position: absolute;
+    margin: 30vh 0 0 0;
+}
+
+.div-button{
+    position: absolute;
+    margin: 8vh 0 0 0
+}

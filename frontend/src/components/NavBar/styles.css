@@ -1,0 +1,16 @@
+.nav{
+    background: #1D243D ;   
+}
+
+.nav-links {
+    color: white !important;
+}
+    
+.nav-links:hover {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #BBD147;
+    text-decoration-thickness: 2px;
+    border-radius: 5px;
+
+}

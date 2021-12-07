@@ -1,0 +1,149 @@
+@keyframes example {
+    0%   {background-color: #1D243D;}
+    25%  {background-color: #050346;}
+    50%  {background-color: #040239;}
+    100% {background-color: #1D243D;}
+}
+
+.area-total-regras {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0%;
+    padding: 0%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "area-geral area-geral area-geral area-geral"
+    "resumo-ataque resumo-ataque-especial resumo-curar resumo-desistir";
+  }
+.explicacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+    padding: 5%;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3); 
+    border-radius: 5px;
+    background-color: #1D243D;
+    backdrop-filter: blur(5px);
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+#texto-explicacao{
+    font-size: 14px;
+    margin: 0%;
+    color: white;
+}
+.col-logo-texto{
+    width: 25vh;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 50%;
+    left: 15%;
+}
+#desistir-regras{
+    width: 25vh;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 50%;
+    left: 15%;
+}
+#texto-botao-regras{
+    font-size: 14px;
+    margin: 0%;
+    color: white;
+}
+#texto-regras{
+    font-size: 14px;
+    margin: 0%;
+    color: white;
+    position: relative;
+    top: 10vh;
+    bottom: 5vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.area-geral { 
+    margin: 0%;
+    padding: 0%; 
+    grid-area: area-geral; }
+
+.resumo-ataque {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 90%;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3); 
+    border-radius: 5px;
+    background-color: #1D243D;
+    backdrop-filter: blur(5px);
+    margin: 0%;
+    margin-left: 2%;
+    padding: 10% 5% 30% 5%;
+    grid-area: resumo-ataque; }
+
+.resumo-ataque-especial { color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 90%;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3); 
+    border-radius: 5px;
+    background-color: #1D243D;
+    backdrop-filter: blur(5px);
+    margin: 0%;
+    margin-left: 2%;
+    padding: 10% 5% 30% 5%;
+    grid-area: resumo-ataque-especial; }
+
+.resumo-curar {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 90%;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3); 
+    border-radius: 5px;
+    background-color: #1D243D;
+    backdrop-filter: blur(5px);
+    margin: 0%;
+    margin-left: 2%;
+    padding: 10% 5% 30% 5%;
+     grid-area: resumo-curar; }
+
+.resumo-desistir {color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 90%;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3); 
+    border-radius: 5px;
+    background-color: #1D243D;
+    backdrop-filter: blur(5px);
+    margin: 0%;
+    margin-left: 2%;
+    padding: 10% 5% 30% 5%;
+    grid-area: resumo-desistir; }

@@ -1,0 +1,36 @@
+version: "3.9"
+
+services:
+  backend:
+    container_name: backend
+    build:
+      context: ./backend
+    depends_on:
+      - db
+    links:
+      - db
+    restart: always 
+    ports:
+      - ${BACK_PORT}:${BACK_PORT}
+
+  frontend:
+    container_name: frontend
+    build:
+      context: ./frontend
+    depends_on:
+      - backend
+    links:
+      - backend
+    ports:
+      - ${FRONT_PORT}:${FRONT_PORT}    
+
+  db:
+    image: 'mongo'
+    container_name: turnGame-db
+    restart: 'always'
+    env_file:  
+      - .env
+    ports:
+      - ${DB_PORT}:${DB_PORT}
+    volumes:
+      - ./backend/data/db:/data/db
